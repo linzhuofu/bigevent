@@ -2,8 +2,6 @@ $(function() {
 
 
 
-
-
     getinfo()
 
     function getinfo() {
@@ -37,7 +35,7 @@ $(function() {
     //渲染用户头像
     function getavatar(data) {
         console.log(data);
-        var name = data.username || data.nickname
+        var name = data.nickname || data.username
         console.log(name[0]);
         if (data.user_pic !== null) {
             $(".layui-nav-img").attr("src", data.user_pic).show();
